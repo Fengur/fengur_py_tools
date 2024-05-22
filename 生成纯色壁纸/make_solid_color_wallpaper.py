@@ -1,5 +1,4 @@
 import argparse
-# import re
 import random
 from PIL import Image
 
@@ -288,11 +287,5 @@ label = args.label
 size = tuple(map(int, args.size.split("x"))) if args.size else None
 color = args.color
 
-
-
 # 生成壁纸
-# generate_wallpaper(label=label, size=size, color=color)
-size = (200, 163)
-for color in colors:
-    color_name = color["name"]
-    generate_wallpaper(color=color_name,size=size)
+generate_wallpaper(label=label, size=size, color=color)
